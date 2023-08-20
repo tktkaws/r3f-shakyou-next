@@ -42,3 +42,7 @@ body,
 body {
   background: #f0f0f0;
 }
+
+canvas {
+  height: 100vh;
+}

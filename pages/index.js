@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,13 +10,14 @@ export default function Home() {
     >
       <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
-          r3f-shakyou with{" "}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+          r3f-shakyou with <Link href="https://nextjs.org">Next.js!</Link>
         </h1>
       </div>
-      <a href="/shakyou/r3f-examples">first</a>
+      <Link href="/shakyou/01">01</Link>
+      <Link href="/shakyou/02">02</Link>
+      <Link href="https://docs.pmnd.rs/react-three-fiber/getting-started/examples">
+        r3f-examples
+      </Link>
 
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
